@@ -1,0 +1,13 @@
+name: J2MC_Notes
+main: to.joe.j2mc.notes.J2MC_Notes
+version: 1.0
+website: http://forums.joe.to
+author: J2 Minecraft Plugin Team
+description: Notes module
+commands:
+  note:
+    description: put in a note
+    usage: /note <target> <message>
+  anote:
+    description: put in a note as an admin
+    usage: /anote <target> <message>
