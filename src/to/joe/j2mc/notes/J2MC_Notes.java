@@ -21,6 +21,7 @@ public class J2MC_Notes extends JavaPlugin implements Listener {
         
         this.getCommand("note").setExecutor(new NoteCommand(this));
         this.getCommand("anote").setExecutor(new NoteCommand(this));
+        this.getServer().getPluginManager().registerEvents(this, this);
         
         this.getLogger().info("Notes module enabled");
     }
