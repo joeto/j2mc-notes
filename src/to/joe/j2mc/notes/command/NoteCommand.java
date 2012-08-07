@@ -47,7 +47,7 @@ public class NoteCommand extends MasterCommand {
                     J2MC_Manager.getCore().adminAndLog(ChatColor.AQUA + "Priv <" + ChatColor.DARK_AQUA + sender.getName() 
                             + ChatColor.AQUA + "->" + ChatColor.DARK_AQUA + target.getName() + ChatColor.AQUA + "> " + message);
                 } else {
-                    String toSend = ChatColor.WHITE + "<" + player.getDisplayName() + ChatColor.GRAY + "->" + ChatColor.WHITE + target.getDisplayName() + "> " + message;
+                    String toSend = ChatColor.WHITE + "<" + player.getDisplayName() + ChatColor.GRAY + "->" + ChatColor.WHITE + target.getDisplayName() + ChatColor.WHITE + "> " + message;
                     player.sendMessage(toSend);
                     target.sendMessage(toSend);
                     for (Player plr : plugin.getServer().getOnlinePlayers()) {
