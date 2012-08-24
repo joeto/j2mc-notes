@@ -30,8 +30,6 @@ public class Manager {
             ps.executeUpdate();
         } catch (SQLException e) {
             plugin.getLogger().warning("Error recording a note: " + e.getMessage());
-        } catch (ClassNotFoundException e) {
-
         }
     }
 
@@ -50,8 +48,6 @@ public class Manager {
             prep.executeUpdate();
         } catch (SQLException e) {
             plugin.getLogger().warning("Unable to load user notes from MySQL: " + e.getMessage());
-        } catch (ClassNotFoundException e) {
-            
         }
         return notes;
     }
