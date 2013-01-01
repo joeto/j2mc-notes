@@ -10,13 +10,10 @@ import to.joe.j2mc.core.command.MasterCommand;
 import to.joe.j2mc.core.exceptions.BadPlayerMatchException;
 import to.joe.j2mc.notes.J2MC_Notes;
 
-public class NoteCommand extends MasterCommand {
+public class NoteCommand extends MasterCommand<J2MC_Notes> {
 
-    J2MC_Notes plugin;
-    
     public NoteCommand(J2MC_Notes notes) {
         super(notes);
-        this.plugin = notes;
     }
 
     @Override

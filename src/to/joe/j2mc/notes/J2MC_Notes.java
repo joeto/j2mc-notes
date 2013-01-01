@@ -26,11 +26,6 @@ public class J2MC_Notes extends JavaPlugin implements Listener {
         this.getLogger().info("Notes module enabled");
     }
 
-    @Override
-    public void onDisable() {
-
-    }
-
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
         ArrayList<Note> notes = manager.grabNotes(event.getPlayer().getName());
